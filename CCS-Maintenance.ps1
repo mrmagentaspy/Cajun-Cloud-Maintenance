@@ -62,6 +62,9 @@ Automatically deletes the files that are left behind after you upgrade Windows.
  #>
 cleanmgr.exe /autoclean /verylowdisk
 
+# Clear Recycle Bin
+Clear-RecycleBin -Force
+
 # Run DISM
 DISM /Online /Cleanup-Image /RestoreHealth
 
